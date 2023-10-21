@@ -3,3 +3,60 @@
 *::after {
   box-sizing: border-box;
 }
+body {
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  height: 100%;
+
+  display: grid;
+  grid-template-rows: 200px 1fr;
+  grid-template-columns: 400px 1fr;
+}
+
+.sidebar {
+  background: lightcyan;
+  grid-row: 1/-1;
+
+  display: grid;
+  grid-template-rows: 100px 1fr 2fr;
+}
+.logo {
+}
+.nav {
+}
+.secondary-nav {
+}
+
+.header {
+  background: lightgrey;
+
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  grid-template-columns: 2fr 1fr;
+}
+.search {
+}
+.login {
+}
+.welcome {
+}
+.actions {
+}
+
+.main {
+  background: lightslategray;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 3fr 1fr;
+}
+.projects {
+  grid-row: 1 / -1;
+}
+.announcements {
+}
+.trending {
+}
